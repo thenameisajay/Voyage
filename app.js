@@ -1,10 +1,23 @@
 const express = require('express');
 const app = express();
+const exphbs = require('express-handlebars');
 
-const port = 3001;
+
+//Create port
+const port = 3002;
+
+// Setting template engine for View
+app.engine('handlebars', exphbs.engine({
+    defaultLayout: 'main'
+}));
+
+
+app.set('view engine', 'handlebars');
+app.set('views', './views');
+
 
 app.get('/', (_req,res) => {
- res.send('Hello World');
+ res.render('home');
 });
 
 app.listen(port,() => {
