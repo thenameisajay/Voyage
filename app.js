@@ -4,7 +4,7 @@ const exphbs = require('express-handlebars');
 
 
 //Create port
-const port = 3002;
+const port = 3000;
 
 // Setting template engine for View
 app.engine('handlebars', exphbs.engine({
@@ -18,6 +18,14 @@ app.set('views', './views');
 
 app.get('/', (_req,res) => {
  res.render('home');
+});
+
+app.get('/about',(_req,res) => {
+    res.render('about');
+})
+
+app.get('/contact',(_req,res)=> {
+ res.render('contact');
 });
 
 app.listen(port,() => {
