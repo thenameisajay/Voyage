@@ -1,7 +1,12 @@
 const express = require('express');
 const app = express();
 const exphbs = require('express-handlebars');
+const bodyParser = require('body-parser');
 
+// installing body-parser middle-ware
+
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
 //Create port
 const port = 3000;
@@ -26,6 +31,12 @@ app.get('/about',(_req,res) => {
 
 app.get('/contact',(_req,res)=> {
  res.render('contact');
+});
+
+//handle POST route for contact
+app.post('/contactme', (req,res) => {
+    const obj = JSON.parse(JSON.stringify(req.body)); // req.body = [Object: null prototype] { title: 'product' }
+    console.log(obj); // { title: 'product' }
 });
 
 app.listen(port,() => {
