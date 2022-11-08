@@ -24,4 +24,25 @@
 Nodemon :  A tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected. (Installation : npm install -g nodemon ) (Usage : >> <nodemon> in main directory / nodemon [your node app]) (Website :
 https://www.npmjs.com/package/nodemon)
 
-Body-parser
+Body-parser : Node.js body parsing middleware. Parse incoming request bodies in a middleware before your handlers, available under the req.body property.
+(Installation : $ npm install body-parser)
+
+API REFERENCE : 
+const bodyParser = require('body-parser')
+
+.JS usage : 
+// parse application/x-www-form-urlencoded
+   app.use(bodyParser.urlencoded({ extended: false }))
+// parse application/json
+   app.use(bodyParser.json())
+   
+   Code Snippets in app.js : 
+   // Start of Code 
+   
+   //handle POST route for contact 
+app.post('/contactme', (req,res) => {
+    const obj = JSON.parse(JSON.stringify(req.body));  // req.body = [Object: null prototype] { title: 'product' }
+    console.log(obj); // { title: 'product' }
+});
+   // End of Code
+   
