@@ -89,4 +89,29 @@ const contactSchema = new Schema ({
     }
     // END CODE
   
+  MongoDB Cloud :  (Website : http://mongodb.com)
+  
+  Usage : Free Cluster hosted on top of Amazon Web Services 
+  
+  <img width="1130" alt="Screenshot 2022-11-09 at 1 15 58 pm" src="https://user-images.githubusercontent.com/113372062/200842005-a2d99320-5f2e-4ba1-8506-34cac1cbbf3f.png">
+  
+<img width="911" alt="Screenshot 2022-11-09 at 1 16 39 pm" src="https://user-images.githubusercontent.com/113372062/200842077-f4b5cb57-6c3e-4d2f-8b62-cc09a0ad391e.png">
+
+<img width="911" alt="Screenshot 2022-11-09 at 1 17 38 pm" src="https://user-images.githubusercontent.com/113372062/200842097-2e72daeb-b269-4347-8c79-1902d182d2fc.png">
+
+
+<img width="765" alt="Screenshot 2022-11-09 at 1 52 56 pm" src="https://user-images.githubusercontent.com/113372062/200847981-3166e2fd-ef80-4cdd-89c2-f5db70f78301.png">
+
+
+Benefits : // Edit later , work on this..
+End to End Encryption in-built
+https://www.exoplatform.com/blog/exo-platform-chat-application-why-mongodb-team-collaboration-software/
+https://www.mongodb.com/docs/manual/security/
+
+Connection string into the application code CREATING A CLUSTER (I.E VOYAGE CLUSTER) :
+
+mongodb+srv://Voyage:<password>@voyage.grm4x9n.mongodb.net/?retryWrites=true&w=majority
+
+
+  
   
