@@ -1,4 +1,4 @@
-# ServerApp
+# Voyage - `GUI Messenger WEBAPP DESIGNED FOR CS4203 - COMPUTER SECURITY
 
 
 
