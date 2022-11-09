@@ -46,3 +46,47 @@ app.post('/contactme', (req,res) => {
 });
    // End of Code
    
+  Moongose Module : Mongoose provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
+  (Website : https://mongoosejs.com)
+  
+  Installation : $ npm install mongoose --save
+  
+  API REFERENCE IN .JS : 
+  const mongoose = require('mongoose');
+
+main().catch(err => console.log(err));
+
+async function main() {
+  await mongoose.connect('mongodb://localhost:27017/test');
+  
+  // use `await mongoose.connect('mongodb://user:password@localhost:27017/test');` if your database has auth enabled
+}
+
+SCHEMA USAGE : 
+const kittySchema = new mongoose.Schema({
+  name: String
+});
+
+CODE USAGE EXAMPLE :  (Contact.js)
+     
+// BEGIN CODE 
+const contactSchema = new Schema ({
+    firstname: {
+        type: String
+    },
+    lastname: {
+        type: String
+    },
+    email: {
+        type:String
+    },
+    message: {
+        type:String
+    },
+    date: {
+        type: Date,
+        default: Date.now
+    }
+    // END CODE
+  
+  
