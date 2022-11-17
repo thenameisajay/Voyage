@@ -1,14 +1,27 @@
 const express = require('express');
 const app = express();
 const exphbs = require('express-handlebars');
+const Handlebars = require('handlebars');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const passport = require('passport');
 
-// Loading Model for Contact Page and 
+// Import function exported by newly installed node modules.
+const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static('public'));
+
+// Loading Model for Contact Page and User
 const Contact = require('./models/contact.js');
+const User = require('./models/user.js');
 
 // Loading Keys URI
 const keys = require('./config/keys');
+
+// Express static Files
+app.use(express.static('client'));
 
 // installing body-parser middle-ware
 
@@ -28,7 +41,10 @@ const port = 3000;
 
 // Setting template engine for View
 app.engine('handlebars', exphbs.engine({
-    defaultLayout: 'main'
+    defaultLayout: 'main',
+
+    // ...implement newly added insecure prototype access
+    handlebars: allowInsecurePrototypeAccess(Handlebars)
 }));
 
 
@@ -66,6 +82,19 @@ app.post('/contactme', (req,res) => {
         res.redirect('/success');
     });
 });
+app.get('/inbox',(req,res) => {
+    Contact.find({})
+    .then((contacts) => {
+if(contacts) {
+     res.render('contacts', {
+        contacts:contacts
+     });
+} else {
+    res.render('empty');
+}
+    });
+});
+
 app.get('/success',(req,res) => {
 res.render('success'); 
 });
