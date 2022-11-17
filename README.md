@@ -113,5 +113,8 @@ Connection string into the application code CREATING A CLUSTER (I.E VOYAGE CLUST
 mongodb+srv://Voyage:<password>@voyage.grm4x9n.mongodb.net/?retryWrites=true&w=majority
 
 
-  
+Passport.JS Middleware Usage : 
+
+
+Facebook Oauth :(Installation : npm install passport-facebook) (Usage : https://www.passportjs.org/packages/passport-facebook/)
   
