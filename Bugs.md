@@ -2,9 +2,11 @@ Frequent Bugs that User may encounter :
 
 InternalOAuthError: Failed to fetch user profile
 
-Cause:
+Cause:Token Expiry -> refresh the page few times
 
+Internal Server Error
 
+Cause:  Database is null -> create a new Table -> refresh the page few times
 
 Bugs to Address:
 
