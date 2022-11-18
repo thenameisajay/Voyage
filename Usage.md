@@ -117,4 +117,6 @@ Passport.JS Middleware Usage :
 
 
 Facebook Oauth :(Installation : npm install passport-facebook) (Usage : https://www.passportjs.org/packages/passport-facebook/)
+
+Google Oauth :  (Installation:npm install passport-google-oauth20) ( Usage: https://github.com/jaredhanson/passport-google-oauth2)
   
