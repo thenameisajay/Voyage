@@ -1,8 +1,8 @@
 Run :
 
-Link : https://radiant-beyond-44855.herokuapp.com
+Link : https://radiant-beyond-44855.herokuapp.com (Payment for herokuapp required , feel free to download and try on local-host)
 
-The website uses OAuth to verify user and automatically create a profile (if none exist
+The website uses OAuth to verify user and automatically create a profile (if none exist)
 
 
 The chat icon is located to the left after successful login and the user can chat to anyone registered to the app.
