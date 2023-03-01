@@ -14,5 +14,3 @@ About:
 
 This Messenger - application called "Voyage" is created as part of CS4203 - CourseWork 2. It was built using Express and .js with the help of middlewares such as Passport for authentication purposes. The use of MongoDB is for storing users and data
 
-
-Just messing around with the code and trying to understand the flow of the application. Feel free to download and try it out.
