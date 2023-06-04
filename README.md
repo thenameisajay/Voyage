@@ -10,7 +10,7 @@ This messenger application, named <strong> "Voyage," </strong> was developed as 
 
 ## Running the Application
 
-To run the application, please use the following [Website Link:] (https://radiant-beyond-44855.herokuapp.com). Please note that payment is required to access the application on herokuapp. Alternatively, you can download the application and try it on your local host.
+To run the application, you can download the application and try it on your local host.
 
 --- 
 
