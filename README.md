@@ -10,7 +10,7 @@ This messenger application, named <strong> "Voyage," </strong> was developed as 
 
 ## Running the Application
 
-To run the application, you can download the application and try it on your local host.
+To run the application, you can try it on "https://voyagemessenger.herokuapp.com/" (but beware they will not sign in as I removed the api's from the code for security purposes) or  you can download the application ( use your own api's) and try it on your local host.
 
 --- 
 
