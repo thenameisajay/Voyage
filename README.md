@@ -20,7 +20,7 @@ Contributions are welcome and appreciated! Here are the steps to contribute to t
 2. Create a new branch for your feature or bug fix.
 3. Implement your feature or bug fix.
 4. Commit your changes and push to your branch on the Github server.
-5. Submit a merge request to merge your changes into the main branch【5†source】.
+5. Submit a merge request to merge your changes into the main branch.
 
 ## License
 This project is part of the coursework of CS4203 - Computer Security of the Computer Science Department at the University of St. Andrews. This project is licensed under the MIT License. See the `LICENSE` file for more information.
